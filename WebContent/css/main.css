@@ -1,0 +1,46 @@
+#weather
+{
+    width: 75%;
+    padding: 10px;
+    text-align: center;
+ 
+    float:right;
+    height:150px;
+    margin-right:10px;
+     margin-left:10px;   
+}
+#entryTable tr, td, th
+{
+	padding: 10px;
+    border: 5px solid #fff;
+}
+#caption
+{	color:#fff;
+	background:#538cc6;
+}
+#leftContent, h3
+{
+	float:left;
+	padding-left:10px;
+	font-family: monospace;
+	clear: both;
+	height:70px;
+	width:20%;
+}
+#weather td
+{
+	border: 1px solid #538cc6;
+}
+#weather th
+{
+	border: 1px solid #538cc6;
+}
+#weather tr
+{
+	border: 1px solid #538cc6;
+}
+img
+{
+	width: 30px;
+	height:30px;
+}

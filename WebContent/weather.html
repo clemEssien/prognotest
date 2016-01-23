@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" Content="text/html;charset=utf-8"/>
+<title> Weather Observation</title>
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/weather.js"></script>  
+<script type="text/javascript" src="js/app.js"></script>
+    
+
+</head>
+<body>
+	<div id= "header"><h3>Supply Parameters</h3> </div>
+	<div id="mainContent">
+	<div  id="leftContent">
+		<form action="rest/weather" method="POST">
+		  <table id="entryTable" cellpadding="5" cellspacing="5" >
+			<tr>
+			 <td>Latitude:</td>
+			 <td><input id="lat" name="lat" /></td>
+			</tr>
+			<tr>
+			 <td>Longitude: </td>
+			 <td><input id="lng" name="lng"/></td>
+			</tr>	
+			<tr>
+			 <td>Username: </td>
+			 <td><input id="username" name="username"  /></td>
+			</tr>		
+			<tr>
+			 <td></td>
+			 <td><input id="check" type="button" value="Check" /></td>
+			</tr>		 
+			</table>
+				<div id="spinner">loading...<img src="images/gears.gif"/></div>
+			
+		</form>
+	</div>
+	<div id="weather">
+	<table id="myTable" cellpadding="3" cellspacing="0">
+	 <thead >
+	  <caption id ="caption"></caption>
+	 </thead>
+	 <tbody id="tableBody">
+	   
+	 </tbody>
+	</table>
+	</div>
+	
+	
+	</div>
+</body>
+</html>
